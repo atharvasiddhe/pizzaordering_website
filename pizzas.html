@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Types - Pizza Ordering Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #555;
+        }
+        .pizza-section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+        .pizza-item {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+        .pizza-item:hover {
+            transform: translateY(-10px);
+        }
+        .pizza-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .pizza-item .order-button {
+            display: none;
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+        }
+        .pizza-item:hover .order-button {
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <nav class="navigation">
+        <a href="index.php">Home</a>
+        <a href="menue.html">Menu</a>
+        <a href="login.html">login</a>
+        <a href="signup.html">sign-up</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <h1>Our Pizza Types</h1>
+            <p>Explore our delicious range of pizzas</p>
+        </div>
+    </header>
+
+    <section class="pizza-section">
+        <div class="container">
+            <div class="pizza-item">
+                <img src="veg-italian-pizza.jpeg" alt="Vegetarian Italian Pizza">
+                <h3>Vegetarian Italian Pizza</h3>
+                <p>Fresh vegetables with Italian seasoning.</p>
+                <a href="order.php?product='Vegetarian Italian Pizza' " class="order-button">Order Now</a>
+            </div>
+            <div class="pizza-item">
+                <img src="nonveg-italian-pizza.jpeg" alt="Non-Vegetarian Italian Pizza">
+                <h3>Non-Vegetarian Italian Pizza</h3>
+                <p>Pepperoni, sausage, and Italian herbs.</p>
+                <a href="order.php?product='Non-Vegetarian Italian Pizza' " class="order-button">Order Now</a>
+            </div>
+            <div class="pizza-item">
+                <img src="veg-corn-pizza.jpeg" alt="Vegetarian Corn Pizza">
+                <h3>Vegetarian Corn Pizza</h3>
+                <p>Fresh corn with mozzarella cheese.</p>
+                <a href="order.php?product='Vegetarian corn Pizza' " class="order-button">Order Now</a>
+            </div>
+            <div class="pizza-item">
+                <img src="nonveg-corn-pizza.jpeg" alt="Non-Vegetarian Corn Pizza">
+                <h3>Non-Vegetarian Corn Pizza</h3>
+                <p>Corn with chicken and cheese.</p>
+                <a href="order.php?product='Non-Vegetarian corn Pizza' " class="order-button">Order Now</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pizza Ordering Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

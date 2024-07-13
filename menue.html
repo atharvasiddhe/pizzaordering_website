@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Pizza Ordering Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #555;
+        }
+        .menu-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+        }
+        .menu-item {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-10px);
+        }
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .menu-item .viewmore {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+            text-decoration: none; 
+            display: inline-block; 
+        }
+        .menu-item .viewmore:hover {
+            opacity: 0.8;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+
+    <nav class="navigation">
+        <a href="index.php">Home</a>
+        <a href="menue.html">Menu</a>
+        <a href="login.html">login</a>
+        <a href="signup.html">sign-up</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Explore our delicious range of items</p>
+        </div>
+    </header>
+
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-item">
+                <img src="Pizza1.jpeg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Delicious pizzas with various toppings.</p>
+                <a href="pizzas.html" class="viewmore">View more</a>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpeg" alt="Burger">
+                <h3>Burger</h3>
+                <p>Juicy burgers with fresh ingredients.</p>
+                <a href="burgers.html" class="viewmore">View more</a>
+            </div>
+            <div class="menu-item">
+                <img src="sandwitch.jpg" alt="Sandwich">
+                <h3>Sandwich</h3>
+                <p>Healthy and tasty sandwiches.</p>
+                <a href="sandwitchs.html" class="viewmore">View more</a>
+            </div>
+            <div class="menu-item">
+                <img src="hotcoffe.jpeg" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>Hot brewed coffee to refresh your day.</p>
+                <a href="coffes.html" class="viewmore">View more</a>
+            </div>
+            <div class="menu-item">
+                <img src="cold.jpeg" alt="Cold Coffee">
+                <h3>Cold Coffee</h3>
+                <p>Refreshing cold coffee for a cool treat.</p>
+                <a href="coldcoffee.html" class="viewmore">View more</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pizza Ordering Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

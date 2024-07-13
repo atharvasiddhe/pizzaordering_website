@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cheesy Bytes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-background">
+    
+    <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="content">
+    <h1>Welcome to Cheesy Bytes</h1>
+    <p>Where flavor meets innovation. Our passion for crafting the perfect pizza experience drives us to deliver the most delicious and satisfying bites. Each slice is a masterpiece, blending premium ingredients with culinary artistry. Whether you're craving classic flavors or daring combinations, Cheesy Bytes promises to exceed your expectations. Join us on a journey of taste and quality, where every bite is a celebration of savory perfection.</p>
+</div>
+
+</body>
+</html>
